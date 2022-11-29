@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PassengerAppComponent } from './passenger-app/passenger-app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 const myRoutes:Routes = [
   {
@@ -17,6 +18,10 @@ const myRoutes:Routes = [
     path:"us",
     component:UsPublicDataComponent
   },
+  {
+    path:"userinfo",
+    component:UserInfoComponent
+  },
 ]
 
 @NgModule({
@@ -25,6 +30,7 @@ const myRoutes:Routes = [
     PassengerAppComponent,
     NavbarComponent,
     UsPublicDataComponent,
+    UserInfoComponent,
   ],
   imports: [
     BrowserModule,
