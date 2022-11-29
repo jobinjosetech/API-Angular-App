@@ -10,6 +10,7 @@ import { UsPublicDataComponent } from './us-public-data/us-public-data.component
 import { UserInfoComponent } from './user-info/user-info.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { UserDataComponent } from './user-data/user-data.component';
+import { TodoComponent } from './todo/todo.component';
 
 const myRoutes:Routes = [
   {
@@ -32,6 +33,10 @@ const myRoutes:Routes = [
     path:"userdata",
     component:UserDataComponent
   },
+  {
+    path:"todo",
+    component:TodoComponent
+  },
 ]
 
 @NgModule({
@@ -43,6 +48,7 @@ const myRoutes:Routes = [
     UserInfoComponent,
     ShoppingComponent,
     UserDataComponent,
+    TodoComponent,
   ],
   imports: [
     BrowserModule,
