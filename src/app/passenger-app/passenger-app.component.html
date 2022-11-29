@@ -1,0 +1,33 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <table class="table mt-4">
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Total Trips</th>
+                    <th scope="col">Airline</th>
+                    <th scope="col">Airline country</th>
+                    <th scope="col">Connect</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let i of passengers.data">
+                    <th>{{i.name}}</th>
+                    <td>{{i.trips}}</td>
+                    <td>{{i.airline[0].name}}</td>
+                    <td>{{i.airline[0].country}}</td>
+                    <td><a class="btn btn-primary" href="{{i.airline[0].website}}" target="_blank">Website</a></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="row g-3">
+    <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" [(ngModel)]="name">
+    </div> -->
