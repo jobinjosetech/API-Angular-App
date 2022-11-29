@@ -6,19 +6,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengerAppComponent } from './passenger-app/passenger-app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UsPublicDataComponent } from './us-public-data/us-public-data.component';
 
 const myRoutes:Routes = [
   {
     path:"",
     component:PassengerAppComponent
-  }
+  },
+  {
+    path:"us",
+    component:UsPublicDataComponent
+  },
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
     PassengerAppComponent,
-    NavbarComponent
+    NavbarComponent,
+    UsPublicDataComponent
   ],
   imports: [
     BrowserModule,
