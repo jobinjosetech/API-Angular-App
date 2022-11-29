@@ -24,7 +24,7 @@ const myRoutes:Routes = [
     AppComponent,
     PassengerAppComponent,
     NavbarComponent,
-    UsPublicDataComponent
+    UsPublicDataComponent,
   ],
   imports: [
     BrowserModule,
