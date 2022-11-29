@@ -11,6 +11,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { UserDataComponent } from './user-data/user-data.component';
 import { TodoComponent } from './todo/todo.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 const myRoutes:Routes = [
   {
@@ -37,6 +38,10 @@ const myRoutes:Routes = [
     path:"todo",
     component:TodoComponent
   },
+  {
+    path:"quotes",
+    component:QuotesComponent
+  },
 ]
 
 @NgModule({
@@ -49,6 +54,7 @@ const myRoutes:Routes = [
     ShoppingComponent,
     UserDataComponent,
     TodoComponent,
+    QuotesComponent,
   ],
   imports: [
     BrowserModule,
